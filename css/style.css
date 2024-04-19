@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'mFont'; 
+    src: url('Nabla-Regular.ttf'); 
+  
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@keyframes fadein {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+body {
+    display: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    background-size: cover; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation: fadein 1s;
+    text-align: center;
+}
+
+.leave {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 37vh;
+  
+}
+
+.ldot {
+  text-align: center;
+  margin-top: 65vh;
+  
+}
+
+.lvDOT {
+  color: red;
+  font-size: 100%;
+  font-family: "mFont"
+}
+.lvDOT::selection { 
+  color: white;
+  }
+
+.lvDOT:link {
+  text-decoration: none;
+}
+
+.lvDOT:visited {
+  text-decoration: none;
+}
+
+.lvDOT:hover {
+  text-decoration: none;
+}
+
+.lvDOT:active {
+  text-decoration: none;
+  animation: fadeout 1s;
+}
+
+.lv {
+  color: rgba(240, 248, 255, 1);
+  font-size: 120%;
+  font-family: "mFont"
+}
+.lv::selection { 
+  color: blue;
+  }
+
+.lv:link {
+  text-decoration: none;
+}
+
+.lv:visited {
+  text-decoration: none;
+}
+
+.lv:hover {
+  text-decoration: none;
+}
+
+.lv:active {
+  text-decoration: none;
+  animation: fadeout 1s;
+}
