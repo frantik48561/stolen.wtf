@@ -1,0 +1,290 @@
+@font-face {
+    font-family: main;
+    src: url(./Comfortaa-VariableFont_wght.ttf);
+  }
+
+body {
+    background-color: rgb(3, 0, 15);
+}
+
+::selection {
+    color: rgb(81, 32, 255);
+  }
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.titletext {
+    font-family: main;
+    font-size: 300%;
+    color: rgb(237, 232, 253);
+}
+
+.discordlogo {
+    position: relative;
+    top: 5px;
+    width: 15px;
+    padding-right: 2px;
+}
+
+.discord {
+    position: relative;
+    top: -8px;
+    text-align: center;
+}
+
+.discordtext {
+    font-family: main;
+    font-size: 80%;
+    color: white;
+}
+
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
+  }
+
+.click:hover {color: rgb(81, 32, 255)}
+
+.click {
+    color: white;
+    font-size: 90%;
+    transition: 0.3s;
+}
+
+.ctitle {
+    color: white;
+    font-size: 120%;
+}
+
+#ctitle {
+    
+    font-family: main;
+    position: relative;
+    top: 40vh;
+}
+
+.bgvid2 {
+    position: fixed;
+    visibility: visible;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.1;
+}
+
+.bgvid {
+    position: fixed;
+    visibility: hidden;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+audio {
+    display: inline;
+}
+
+.bgaud2 {
+    display: initial;
+    position: fixed;
+    bottom: 2%;
+    left: 1.5%;
+    visibility: visible;
+    align-items: center;
+    z-index: 1000000000;
+    opacity: 0.1;
+
+}
+
+.bgaud {
+    position: fixed;
+    bottom: 2%;
+    left: 1.5%;
+    visibility: hidden;
+    align-items: center;
+    z-index: 1000000000;
+    
+
+}
+
+.landing2 {
+    text-align: center;
+    opacity: 0;
+    position: fixed;
+    background-color: black;
+    visibility: hidden;
+    width: 100vw;
+    
+    
+    height: 100;
+    transition: 0.3s;
+}
+
+
+.landing {
+    text-align: center;
+    opacity: 1;
+    position: fixed;
+    background-color: black;
+    visibility: visible;
+    width: 100vw;
+    z-index: 1000000000;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.mid {
+    position: relative;
+    top: 35vh;
+
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.gradient-border {
+    --border-width: 1px;
+  
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 1px;
+    font-family: main;
+    color: white;
+    font-size: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    border: 2px solid #ffffff;
+}
+
+
+.ig {
+    position: relative;
+    top: -8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.twt {
+    position: relative;
+    top: -8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.steam {
+    position: relative;
+    top: -8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.ogu {
+    position: relative;
+    top: -8px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.bggrad { 
+
+	display: grid;
+	height: 100vh;
+	place-items: center; 
+}
+
+.bggrad::before {
+	animation: anim 30s infinite;
+	background: radial-gradient(circle at 0% 0%, rgb(190, 178, 255), slateblue);
+	border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+	box-shadow: 0 -2vmin 4vmin rgb(65, 47, 226) inset, 0 1vmin 4vmin rgb(131, 112, 216) inset,
+		0 -2vmin 7vmin rgb(13, 0, 128) inset;
+	content: "";
+	filter: drop-shadow(0 0 3vmin rgb(17, 26, 134)) drop-shadow(0 5vmin 4vmin rgb(128, 112, 218))
+		drop-shadow(2vmin -2vmin 15vmin MediumSlateBlue)
+		drop-shadow(0 0 7vmin rgb(85, 87, 211));
+	height: 50vmin;
+	position: fixed;
+	width: 50vmin;
+}
+
+@keyframes anim {
+	0%,
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+		box-shadow: 0 -2vmin 4vmin rgb(189, 182, 255) inset, 0 -4vmin 4vmin rgb(122, 112, 216) inset,
+			0 -2vmin 7vmin rgb(13, 0, 128) inset;
+	}
+
+	10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+		box-shadow: 0 -4vmin 8vmin rgb(138, 105, 255) inset, -1vmin -2vmin 6vmin rgb(193, 182, 255) inset,
+			-1vmin -2vmin 4vmin rgb(143, 112, 216) inset, 1vmin 4vmin 8vmin rgb(13, 0, 128) inset;
+	}
+
+	40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+	}
+
+	50% {
+		border-radius: 100%;
+		box-shadow: 0 4vmin 16vmin rgb(133, 105, 255) inset, 0 2vmin 5vmin rgb(40, 13, 192) inset, 0 4vmin 4vmin rgb(114, 112, 216) inset,
+			0 6vmin 8vmin rgb(19, 0, 128) inset;
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+		box-shadow: 1vmin 1vmin 8vmin rgb(198, 182, 255) inset,
+			2vmin -1vmin 4vmin rgb(93, 57, 221) inset, -1vmin -1vmin 16vmin rgb(41, 0, 226) inset;
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
+}
