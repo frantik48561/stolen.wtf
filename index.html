@@ -1,24 +1,56 @@
-<!doctype html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>stolen</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <meta property="og:site_name" content="stolen.wtf">
-  <meta property="og:url" content="https://stolen.wtf/">
-  <meta property="og:title" content="stolen">
-  <meta content="https://iv.baby/css/black.png" property="og:image" />
-  <meta content="#000001" data-react-helmet="true" name="theme-color" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iv</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+<body>
+    <script>
+        function land() {
+            document.getElementById("landing").className = "landing2";
+            document.getElementById("bgvid").className = "bgvid2";
+            var x = document.getElementById("bgaud");
+            x.className = "bgaud2";
+            x.play()
+        }
+    </script>
+<audio id="bgaud" class="bgaud" controls loop>
+    <source src="./kankan.mp3" type="audio/mpeg">
+    </audio>
+    <video class="bgvid" autoplay muted loop id="bgvid">
+    <source src="./kankan.mp4" type="video/mp4">
+  </video>
+  
 
-<body id="body" style="background-color:rgb(0, 0, 0);">
-  <div class="leave">
-    <a class="lv" id="lv">S T O L E N</a>
-  </div>
-  <div class="ldot">
-    <a href="./leave" class="lvDOT" id="lvDOT">.</a>
-  </div>
+    
+    
+    <div id="landing" class="landing">
+        <a id="ctitle" class="ctitle">Need More?</a>
+        <br>
+        <a onclick="land();" id="ctitle" class="click">> click here <</a>
+    </div>
+    
+    <div class="mid">
+        
+        <div class="title">
+            <a class="titletext">iv</a>
+        </div>
 
+        <div class="discord">
+            <img class=discordlogo src="./discord.png">
+            <a class="discordtext">@servicemedal</a>
+        </div>
+
+        <div class="gradient-border ">
+            <a href="https://www.instagram.com/edge_bug/" class="ig">instagram</a>
+            <a href="https://x.com/nevergotanad" class="twt">twitter</a>
+            <a href="https://steamcommunity.com/id/i-v/" class="steam">steam</a>
+            <a href="https://oguser.com/randomkokot" class="ogu">ogusers</a>
+        </div>
+        
+    </div>
+</div>
 </body>
-
 </html>
